@@ -1,0 +1,15 @@
+.textinput-container{
+		display: flex;
+		background-color: lightblue;
+		padding: 50px;
+		align-items: center;
+		justify-content: center;
+}
+::placeholder {
+		color: white;
+}
+.textarea {
+		background-color: gray;
+		max-height: 300px;
+		max-width: 600px;
+}

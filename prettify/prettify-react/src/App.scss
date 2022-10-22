@@ -1,0 +1,7 @@
+@import "./scss/mixins/positions.scss";
+
+.App {
+  height: 100vh;
+  background: black;
+  @include flex(center, center, column);
+}

@@ -1,0 +1,34 @@
+@import '../scss/mixins/positions.scss';
+@import '../scss/mixins/hovers.scss';
+
+.search-bar-container {
+		
+	@include flex(center, flex-end, column);
+
+	.search-bar {
+		background: black;
+		padding: 15px;
+		width: 600px;
+		border-radius: 50px;
+		border: 2px solid lightblue;
+		font-size: 1.5rem;
+		outline: none;
+		color: lightblue;
+		&:focus {
+				border: 4px solid lightblue;
+		}
+	}
+	.search-bar-submit-button {
+			margin-top: 10px;
+			margin-right: 15px;
+			font-size: 1.1rem;
+			padding: 10px;
+			color: lightblue;
+			background: none;
+			border: none;
+			border-bottom: 3px solid lightblue;
+
+				@include hoverBtn(1.2, 250ms)
+	}
+}
+

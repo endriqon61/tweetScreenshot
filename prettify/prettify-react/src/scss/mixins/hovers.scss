@@ -1,0 +1,7 @@
+@mixin hoverBtn($scale, $speed){
+		cursor: pointer;
+		transition: $speed ease-in;
+		&:hover {
+			transform: scale($scale)
+	}
+}
